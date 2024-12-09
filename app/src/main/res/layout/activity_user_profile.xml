@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".UserProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_medilaser"
+            android:layout_gravity="center"
+            android:contentDescription="@string/logo_description" />
+
+        <!-- Foto de perfil -->
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_profile_placeholder"
+            />
+
+        <!-- Datos del Paciente -->
+        <TextView
+            android:id="@+id/textViewDatosPacienteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos del Paciente"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre: Ángel de la Cruz"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewDni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DNI: 74138148"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/textViewTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teléfono: 939443169"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo: angelfabian399@yahoo.com.ar"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="4dp" />
+
+        <!-- Datos de la Cita -->
+        <TextView
+            android:id="@+id/textViewDatosCitaTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos de la Cita"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textViewFechaCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha: 2024-11-21"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewHoraCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora: 16:00"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="4dp" />
+
+        <!-- Video Introductorio -->
+        <TextView
+            android:id="@+id/textViewVideoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video Introductorio"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+
+        <VideoView
+            android:id="@+id/videoViewIntro"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:visibility="visible" />
+
+
+        <!-- Botón de Cita Virtual -->
+        <Button
+            android:id="@+id/buttonCitaVirtual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresar a la Cita"
+            android:textSize="16sp"
+            android:textColor="#FFF"
+            android:backgroundTint="#000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

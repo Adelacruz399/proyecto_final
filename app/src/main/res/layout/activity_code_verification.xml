@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    android:gravity="center">
+
+    <!-- Instrucción -->
+    <TextView
+        android:id="@+id/textViewInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el código de verificación enviado a tu correo:"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <!-- Campo para el código -->
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código de verificación"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textSize="16sp"
+        android:textColor="#000"
+    android:padding="16dp"
+    android:layout_marginBottom="32dp" />
+
+    <!-- Botón de verificación -->
+    <Button
+        android:id="@+id/buttonVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        android:backgroundTint="#000"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>
